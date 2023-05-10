@@ -26,7 +26,12 @@ const AddCoffee = () => {
         .then(res => res.json())
         .then(data => {
             if(data.insertedId){
-                Sw
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'User Added successfully',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                  })
             }
         })
     } 
