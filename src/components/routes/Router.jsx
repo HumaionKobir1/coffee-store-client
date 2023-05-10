@@ -25,8 +25,9 @@ import UpdateCoffee from '../pages/UpdateCoffee';
         element: <AddCoffee></AddCoffee>
     },
     {
-        path: '/updateCoffee',
-        element: <UpdateCoffee></UpdateCoffee>
+        path: '/updateCoffee/:id',
+        element: <UpdateCoffee></UpdateCoffee>,
+        loader: ({params}) => fetch(`http://localhost:5000/coffee/${params.id}`)
     }
   ]);
 

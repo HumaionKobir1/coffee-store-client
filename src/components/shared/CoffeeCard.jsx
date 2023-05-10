@@ -52,6 +52,7 @@ const CoffeeCard = ({coffee}) => {
             <div className="px-6 py-4 space-y-4">
                 <button  className='bg-indigo-800 hover:bg-indigo-950 px-1 py-1 text-white rounded-xl'>view</button>
                 <br />
+                <br />
                 <Link to={`updateCoffee/${_id}`}>
                     <button className='bg-indigo-800 hover:bg-indigo-950 px-1 text-white rounded-xl'>Edit</button>
                 </Link>
